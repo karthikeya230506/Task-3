@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Voter ID Card</title>
+
+<style>
+  body{
+    background:#ccc;
+    font-family:Arial;
+  }
+
+  .card{
+    width:460px;
+    height:270px;
+    margin:40px auto;
+    padding:15px;
+    border:2px solid black;
+    border-radius:12px;
+    background:linear-gradient(to right,#e6f7ff,#ffffff);
+    box-sizing:border-box;
+  }
+
+  .top{
+    display:flex;
+    justify-content:space-between;
+    font-weight:bold;
+    font-size:13px;
+  }
+
+  .title{
+    text-align:center;
+    margin:8px 0;
+    font-size:15px;
+    font-weight:bold;
+    background:#b3e0ff;
+    padding:5px;
+    border-radius:6px;
+  }
+
+  .main{
+    display:flex;
+    gap:15px;
+    margin-top:12px;
+  }
+
+  .photo{
+    width:90px;
+    height:110px;
+    border:1px solid black;
+    background:white;
+    text-align:center;
+    line-height:110px;
+    font-size:12px;
+  }
+
+  .info{
+    flex:1;
+    font-size:13px;
+    line-height:1.6;
+  }
+
+  .qr{
+    width:85px;
+    height:85px;
+    border:1px solid black;
+    background:repeating-linear-gradient(
+      45deg,
+      black 0 4px,
+      white 4px 8px
+    );
+  }
+
+  .idno{
+    margin-top:8px;
+    font-weight:bold;
+    color:darkblue;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <div class="top">
+    <div>ELECTION COMMISSION</div>
+    <div>GOVT OF INDIA</div>
+  </div>
+
+  <div class="title">VOTER IDENTITY CARD</div>
+
+  <div class="main">
+
+    <div class="photo">PHOTO</div>
+
+    <div class="info">
+      <div><b>Name:</b> Applicant Name</div>
+      <div><b>DOB:</b> 01/01/2000</div>
+      <div><b>Gender:</b> Male/Female</div>
+      <div class="idno">EPIC No: ABC1234567</div>
+    </div>
+
+    <div class="qr"></div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
